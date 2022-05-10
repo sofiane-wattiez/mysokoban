@@ -31,7 +31,7 @@ class PlayerInterface:
 
     def setTxtColors(self):
         pass
-
+    # render view
     def render(self, window, level):
         self.txtLevel = "Niveau " + str(level)
         self.txtLevelSurface = self.font_menu.render(self.txtLevel, True, self.colorTxtLevel, SOKOBAN.WHITE)

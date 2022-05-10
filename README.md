@@ -8,6 +8,8 @@ I create this game for the runtrack python on my training périod by La Platefor
 ### Dependencies
 To run this game you'll need **python3** and **pygame** installed
 
+pip install PyMySQL
+
 ### How to run
 
 ```git clone https://github.com/sofiane-wattiez/mysokoban.git```
