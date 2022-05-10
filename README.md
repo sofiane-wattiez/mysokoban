@@ -20,9 +20,11 @@ To run this game you'll need **python3** and **pygame** installed
 
 | Keyboard control  | Effect | 
 | :----: |:----:| 
-| R  | Restart game  | 
+
 | Z  | Move to up character | 
 | Q  | Move to left | 
 | S  | Move to down  | 
 | D  | Move to right | 
-
+| R  | Restart game  | 
+| L  | Reset last move  | 
+| ESC  | Exit game  | 
