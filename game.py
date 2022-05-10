@@ -24,7 +24,7 @@ class Game:
            SOKOBAN.BOX: pygame.image.load('assets/images/box.png').convert_alpha(),
            SOKOBAN.TARGET: pygame.image.load('assets/images/target.png').convert_alpha(),
            SOKOBAN.TARGET_FILLED: pygame.image.load('assets/images/valid_box.png').convert_alpha(),
-           SOKOBAN.PLAYER: pygame.image.load('assets/images/player_sprites.png').convert_alpha()
+           SOKOBAN.PLAYER: pygame.image.load('assets/images/character.png').convert_alpha()
        }
 
     def load_level(self):
