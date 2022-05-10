@@ -20,7 +20,6 @@ To run this game you'll need **python3** and **pygame** installed
 
 | Keyboard control  | Effect | 
 | :----: |:----:| 
-
 | Z  | Move to up character | 
 | Q  | Move to left | 
 | S  | Move to down  | 
