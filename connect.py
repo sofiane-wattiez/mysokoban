@@ -6,7 +6,7 @@ import pymysql
 databaseServerIP            = "127.0.0.1"  # IP address of the MySQL database server
 databaseUserName            = "root"       # User name of the database server
 databaseUserPassword        = ""           # Password for the database user
-newDatabaseName             = "NewDatabase" # Name of the database that is to be created
+newDatabaseName             = "Sokoban" # Name of the database that is to be created
 charSet                     = "utf8mb4"     # Character set
 cusrorType                  = pymysql.cursors.DictCursor
 connectionInstance   = pymysql.connect(host=databaseServerIP, user=databaseUserName, password=databaseUserPassword,
