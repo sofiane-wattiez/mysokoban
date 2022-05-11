@@ -24,8 +24,8 @@ try:
     cursorInsatnce.execute(sqlQuery)
     #Fetch all the rows
     databaseList                = cursorInsatnce.fetchall()
-    for datatbase in databaseList:
-        print(datatbase)
+    for database in databaseList:
+        print(database)
 
 except Exception as e:
 
