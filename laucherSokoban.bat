@@ -1,2 +1,2 @@
-cd C:\wamp64\www\MySokoban\
+cd MySokoban\
 py ./Sokoban.py
