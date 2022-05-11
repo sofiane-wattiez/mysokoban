@@ -1,11 +1,9 @@
 import pymysql
 
-conn = pymysql.connect(host='localhost', user='root', password='1234', charset='utf8', db='kobis')
+conn = pymysql.connect(host='127.0.0.1', user='root', password='', charset='utf8', db='sokoban')
 cur = conn.cursor()
 
-sql = """insert into `sokoban` (targetDt, rank, rankOldAndNew, 
-                                  movieCd, movieNm, salesAmt, audiCnt)
-         values (%s, %s, %s, %s, %s, %s, %s) 
-    """
-cur.execute(sql,(20180220,11,'OLD',20170511,'Conan',36388900,48011))
+# Id from player table in database being auto-incremented
+sql =   """   insert into `player` (playerName, playerScore) values ( %s , %s)"""
+cur.execute(sql,( 'sofiane', 1))
 conn.commit()
