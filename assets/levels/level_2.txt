@@ -1,10 +1,12 @@
-XXXXXXXXXXXX  
-X..  X     XXX
-X..  X *  *  X
-X..  X*XXXX  X
-X..    @ XX  X
-X..  X X  * XX
-XXXXXX XX* * X
-  X *  * * * X
-  X    X     X
-  XXXXXXXXXXXX
+   XXX
+  XX X XXXX
+ XX  XXX  X
+XX *      X
+X   @* X  X
+XXX *XXX  X
+  X  X..  X
+ XX XX.X XX
+ X      XX
+ X     XX
+ XXXXXXX
+
