@@ -2,15 +2,15 @@
 
 I create this game for the runtrack python on my training périod by La Plateforme_ from Marseille (School)
 
-## Build and Install
+## Dependencies
 
+To run this game you'll need **python3** and dependencies
 
-### Dependencies
-To run this game you'll need **python3** and **pygame** installed
+```pip install pygame```
 
-pip install PyMySQL
+```pip install PyMySQL```
 
-### How to run
+## How to run
 
 ```git clone https://github.com/sofiane-wattiez/mysokoban.git```
 
@@ -18,7 +18,7 @@ pip install PyMySQL
 
 ```python3 Sokoban.py```
 
-### Control
+## Control keyboard
 
 | Keyboard control  | Effect | 
 | :----: |:----:| 
