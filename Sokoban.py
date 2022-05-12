@@ -48,9 +48,10 @@ class Menu:
 def main():
     pygame.init()
     pygame.key.set_repeat(100, 100)
-    pygame.display.set_caption("Sokoban Game")
+    pygame.display.set_caption("Sokoban By S.W")
     window = pygame.display.set_mode((SOKOBAN.WINDOW_WIDTH, SOKOBAN.WINDOW_HEIGHT))
     menu = Menu()
+    name = input("Enter your name: ")
 
     run = True
     while run:

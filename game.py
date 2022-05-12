@@ -40,6 +40,7 @@ class Game:
 
     def start(self):
         while self.play:
+            # self.name = input("Enter your name: ")
             self.process_event(pygame.event.wait())
             self.update_screen()
 

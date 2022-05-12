@@ -7,6 +7,7 @@ class Player:
     def __init__(self, level):
         self.pos = level.position_player
         self.direction = SOKOBAN.DOWN
+        # self.name = input("Enter your name: ")
 
     def move(self, direction, level, interface):
         x = self.pos[0]
