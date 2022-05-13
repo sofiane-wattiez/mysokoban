@@ -16,7 +16,7 @@ To run this game you'll need **python3** and dependencies
 
 ```cd mysokoban```
 
-```python3 Sokoban.py```
+```python Sokoban.py```
 
 ## Control keyboard
 
