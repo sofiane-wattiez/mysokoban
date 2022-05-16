@@ -51,7 +51,7 @@ def main():
     pygame.display.set_caption("Sokoban By S.W")
     window = pygame.display.set_mode((SOKOBAN.WINDOW_WIDTH, SOKOBAN.WINDOW_HEIGHT))
     menu = Menu()
-    name = input("Enter your name: ")
+    # name = input("Enter your name: ")
 
     run = True
     while run:

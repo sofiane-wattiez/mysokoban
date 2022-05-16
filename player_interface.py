@@ -2,7 +2,7 @@ import pygame
 import constants as SOKOBAN
 
 class PlayerInterface:
-    def __init__(self, player, level,name):
+    def __init__(self, player, level):
         self.player = player
         self.level = level
         self.mouse_pos = (-1,-1)
@@ -13,7 +13,7 @@ class PlayerInterface:
         self.colorTxtCancel = SOKOBAN.GREY
         self.txtReset = "Recommencer le niveau"
         self.colorTxtReset = SOKOBAN.BLACK
-        self.name = input("Entrez votre nom: ")
+        # self.name = input("Entrez votre nom: ")
 
     def click(self, pos_click, level, game):
         x = pos_click[0]
