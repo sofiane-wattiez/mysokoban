@@ -2,15 +2,17 @@ import pygame
 from pygame.locals import *
 import constants as SOKOBAN
 from copy import deepcopy
-from scores import Scores
+# from scores import Scores
 
-class Player(Scores):
+class Player():
+    
     def __init__(self, level):
         """
         Initialize the player
         """
         self.pos = level.position_player
         self.direction = SOKOBAN.DOWN
+        # self.score = scores.get_score()
         # self.name = input("Enter your name: ")
 
     def move(self, direction, level, interface):
