@@ -9,6 +9,9 @@ from player_interface import *
 
 class Game:
     def __init__(self, window):
+        """
+        Initialize the game
+        """
         self.window = window
         self.load_textures()
         self.player = None
@@ -19,7 +22,10 @@ class Game:
         self.player_interface = PlayerInterface(self.player, self.level)
 
     def load_textures(self):
-       self.textures = {
+        """
+        Load all textures from Assets folder
+        """
+        self.textures = {
            SOKOBAN.WALL: pygame.image.load('assets/images/wall.png').convert_alpha(),
            SOKOBAN.BOX: pygame.image.load('assets/images/box.png').convert_alpha(),
            SOKOBAN.TARGET: pygame.image.load('assets/images/target.png').convert_alpha(),
@@ -30,6 +36,9 @@ class Game:
         }
 
     def load_level(self):
+        """
+        Load the current level
+        """
         self.level = Level(self.index_level)
         self.board = pygame.Surface((self.level.width, self.level.height))
         if self.player:
@@ -39,12 +48,18 @@ class Game:
             self.player = Player(self.level)
 
     def start(self):
+        """
+        Start the game
+        """
         while self.play:
             # self.name = input("Enter your name: ")
             self.process_event(pygame.event.wait())
             self.update_screen()
 
     def process_event(self, event):
+        """
+        Process the event
+        """
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
@@ -71,6 +86,9 @@ class Game:
             self.player_interface.mouse_pos = event.pos
 
     def update_screen(self):
+        """
+        Update the screen
+        """
         pygame.draw.rect(self.board, SOKOBAN.WHITE, (0,0, self.level.width * SOKOBAN.SPRITESIZE, self.level.height * SOKOBAN.SPRITESIZE))
         pygame.draw.rect(self.window, SOKOBAN.WHITE, (0,0,SOKOBAN.WINDOW_WIDTH,SOKOBAN.WINDOW_HEIGHT))
 
@@ -86,6 +104,9 @@ class Game:
         pygame.display.flip()
 
     def has_win(self):
+        """
+        Check if the player has win
+        """
         nb_missing_target = 0
         for y in range(len(self.level.structure)):
             for x in range(len(self.level.structure[y])):

@@ -2,14 +2,21 @@ import pygame
 from pygame.locals import *
 import constants as SOKOBAN
 from copy import deepcopy
+from scores import Scores
 
-class Player:
+class Player(Scores):
     def __init__(self, level):
+        """
+        Initialize the player
+        """
         self.pos = level.position_player
         self.direction = SOKOBAN.DOWN
         # self.name = input("Enter your name: ")
 
     def move(self, direction, level, interface):
+        """
+        Move the player in the given direction
+        """
         x = self.pos[0]
         y = self.pos[1]
 
@@ -108,6 +115,9 @@ class Player:
             interface.colorTxtCancel = SOKOBAN.BLACK
 
     def render(self, window, textures):
+        """
+        Render the player on the window
+        """
         if self.direction == SOKOBAN.DOWN:
             top = 0
         elif self.direction == SOKOBAN.LEFT:

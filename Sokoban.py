@@ -6,6 +6,7 @@ from game import *
 class Menu:
     def __init__(self):
         self.image = pygame.image.load('assets/images/menu.png').convert_alpha()
+        self.name = input("Enter your name: ")
         self.new_game_txt = "Nouvelle partie"
         self.load_game_txt = "Continuer"
         self.quit_game_txt = "Quitter"
@@ -51,7 +52,6 @@ def main():
     pygame.display.set_caption("Sokoban By S.W")
     window = pygame.display.set_mode((SOKOBAN.WINDOW_WIDTH, SOKOBAN.WINDOW_HEIGHT))
     menu = Menu()
-    # name = input("Enter your name: ")
 
     run = True
     while run:

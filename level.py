@@ -7,6 +7,9 @@ class Level:
         self.load(level_to_load)
 
     def load(self, level):
+        """
+        Load the level assets
+        """
         self.structure = []
         max_width = 0
         with open("assets/levels/level_" + str(level) + ".txt") as level_file:
@@ -35,6 +38,9 @@ class Level:
         self.height = (len(rows) - 1) * SOKOBAN.SPRITESIZE
 
     def cancel_last_move(self, player, interface):
+        """
+        Cancel the last move
+        """
         if self.last_structure_state:
             self.structure = self.last_structure_state
             player.pos = self.last_player_pos
@@ -44,6 +50,9 @@ class Level:
             print("No previous state")
 
     def render(self, window, textures):
+        """
+        Render the level on the screen
+        """
         for y in range(len(self.structure)):
             for x in range(len(self.structure[y])):
                 if self.structure[y][x] in textures:

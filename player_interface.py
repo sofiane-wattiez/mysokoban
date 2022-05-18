@@ -3,6 +3,9 @@ import constants as SOKOBAN
 
 class PlayerInterface:
     def __init__(self, player, level):
+        """
+        Initialize the player interface values
+        """
         self.player = player
         self.level = level
         self.mouse_pos = (-1,-1)
@@ -16,6 +19,9 @@ class PlayerInterface:
         # self.name = input("Entrez votre nom: ")
 
     def click(self, pos_click, level, game):
+        """
+        Process the click event
+        """
         x = pos_click[0]
         y = pos_click[1]
 
@@ -31,9 +37,15 @@ class PlayerInterface:
             game.load_level()
 
     def setTxtColors(self):
+        """
+        Set the colors of the text
+        """
         pass
     # render view
     def render(self, window, level):
+        """
+        Render the level on the screen
+        """
         self.txtLevel = "Niveau " + str(level)
         self.txtLevelSurface = self.font_menu.render(self.txtLevel, True, self.colorTxtLevel, SOKOBAN.WHITE)
         window.blit(self.txtLevelSurface, (10, 10))
